@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineEstreno HD | Tu Portal de Películas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- ESTILOS GENERALES (Paleta: Negro, Blanco, Rojo) --- */
+        :root {
+            --negro-fondo: #0a0a0a; /* Negro muy oscuro */
+            --negro-card: #161616;  /* Negro ligeramente más claro para tarjetas */
+            --blanco-texto: #ffffff;
+            --rojo-principal: #e50914; /* Rojo tipo Netflix */
+            --rojo-brillo: rgba(229, 9, 20, 0.7); /* Rojo con transparencia para luces */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--negro-fondo);
+            color: var(--blanco-texto);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Evita scroll horizontal */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        /* --- BARRA DE NAVEGACIÓN (Header) --- */
+        header {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed; /* Se mantiene arriba */
+            width: 90%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--rojo-principal);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            /* EFECTO DE LUZ ROJA EN EL LOGO */
+            text-shadow: 0 0 10px var(--rojo-brillo), 0 0 20px var(--rojo-brillo);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
